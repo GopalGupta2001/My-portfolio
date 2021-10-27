@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITNESS</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+    body{
+        font-family: 'PT Sans', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background: url(img/pexels-pixabay-38630.jpg)  no-repeat center center/cover; ;
+        /* background-position: center ; */
+/* background-repeat: repeat; */
+/* background-size: cover; */
+    }
+    .left{
+        display: inline-block;
+        /* border: 2px solid red;  */
+        position: relative;
+        top:20px;
+        left: 20px;
+    }
+    .left img{
+        width: 70px;
+        filter: invert(100%);
+    }
+    .left div{
+        font-size: 14px;
+        text-align: center;
+    }
+    .mid{
+        display: block;
+        height: 40px;
+        width: 55%;
+        /* margin: auto; */
+        /* border: 2px solid blue; */
+        position: absolute;
+        top: 20px;
+        left: 300px;
+    }
+    .right{
+        position: absolute;
+        top: 20px;
+        right: 34px;
+        display: inline-block;
+        /* border: 2px solid black; */
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        /* background-color: blue; */
+    }
+    .navbar li a{
+        color: #00ffa1;
+        text-decoration:none;
+        padding: 23px 34px;
+        font-size: 20px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: tomato;
+        /* background-color: purple;
+        border: 2px solid yellowgreen; */
+    }
+    .btn{
+        margin: 2px 5px;
+        color: darkblue;
+        background-color: lightyellow;
+        padding: 4px 7px;
+        border-radius: 15px;
+        border: 2px solid red;
+        font-size: 14px;
+        cursor:pointer;
+        font-family: 'PT Sans', sans-serif;
+    }
+    .btn:hover{
+        color: yellow;
+        background-color: red;
+        border: 2px solid green;
+    }
+    .lor{
+        position: relative;
+        top: 35px;
+        /* border: 2px solid darkgreen; */
+        padding: 25px 95px;
+        margin: 50px 35px;
+        width: 30%;
+        border-radius: 5px;
+    }
+    .form input{
+        text-align: center;
+        margin: 5px;
+        padding: 7px;
+        width: 400px;
+        border: 2px solid dodgerblue;
+        border-radius: 12px;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 21px;
+    }
+    .lor button{
+        text-align: center;
+        margin: 0px 158px; /*///lkjhbgv*/
+    }
+</style>
+<body>
+    <header>
+        <div class="left">
+            <img src="img/gym.jpg" alt="">
+            <div>My Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="lor">
+       <h1>Join The best Gym of Delhi Now.</h1>
+       <form action="#">
+           <div class="form">
+               <input type="text" name="" placeholder="Enter Your Name.">
+           </div>
+           <div class="form">
+                <input type="text" name="" placeholder="Enter Your Age.">
+            </div>
+            <div class="form">
+                <input type="text" name="" placeholder="Enter Your Weight.">
+            </div>
+            <div class="form">
+                <input type="text" name="" placeholder="Enter Your Height.">
+            </div>
+            <button class="btn">Submit</buttin>
+       </form>
+    </div>
+</body>
+</html>
